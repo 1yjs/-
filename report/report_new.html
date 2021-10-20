@@ -6,12 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../css/commen.css">
-    <link rel="stylesheet" href="../css/report_new.css">
+    <link rel="stylesheet" href="./css/commen.css">
+    <link rel="stylesheet" href="./css/report.min.css">
 </head>
 
 <body>
-    <!-- 首页的头部
+    <!-- 首页的头部 -->
     <div class="index_nav">
         <a href="./../index.html" class="logo_back"></a>
         <ul class="nav_list">
@@ -27,58 +27,110 @@
         <span class="login" id="login_"><a href="javascript:;">登录</a></span>
         <span class="search"></span>
     </div>
-    <div class="nav_b_line"></div> -->
+    <div class="nav_b_line"></div>
     <!-- 中间代码部分 -->
-    <div class="middle">
-        <h2 class="report_nav">体检报告</h2>
-        <a id="new" onclick="olk()">最新</a>
-        <a id="hot">最热</a>
-        <div class="report_new">
-            <div class="box_left">
-                <div class="Image">
-                    <img src="" alt="">
-                </div>
-                <p class="text">123</p>
-                <div class="like">5</div>
-                <div class="words">3</div>
-            </div>
-            <div class="box_right">
-                <div id="logb"></div>
-                <h2 class="tabh">极果体验师</h2>
-                <div id="img-1">
-                    <img src="../img/tiyanImg.jpg" alt="">
-                    <h2>福利</h2><br>
-                    <p>
-                        第一时间体验新品，大众试用优先通过，还<br>
-                        有定向邀请试用，新品玩到手软！
-                    </p>
-                    <h2>要求</h2><br>
-                    <p>
-                        是某个领域的大神级作家，在社交网络或圈<br>
-                        子里有大影响力，善写作品拍摄。
-                    </p>
-                    <h2>申请</h2>
-                    <p>
-                        1.关注极果公众号：jguoguo <br>
-                        (或扫描下方二维码) <br>
-                        2.在公众号内回复：体验师
-                    </p>
-                    <div id="tabi"></div>
-                    <h2>关注我们</h2><br>
-                    <div id="img-2">
-                        <img src="../img/myCode.jpg" alt="">
+    <h1>体验报告</h1>
+    <ul class="other_nav">
+        <li><a href="./report_hot.html">最新</a></li>
+        <li class="active"><a href="./report_new.html">最热</a></li>
+    </ul>
+    <div class="use_main">
+        <div class="use_main_left fl">
+            <ul id="report_new_list" class="report_list">
+                <li>
+                    <img src="../img/bg8.jpg" alt="">
+                    <div>
+                        <p class="r_title">空气净化器里面学问多得惊呆你，你选对了吗？</p>
+                        <span class="fl">
+                            <span><img src="./../css/img/tx.jpg" alt=""> 苏苏</span>
+                            <span>2016-01-25</span>
+                        </span>
+                        <span class="fr">
+                            <span>3</span>
+                            <span>3</span>
+                        </span>
                     </div>
-                </div>
-            </div>
+                </li>
+                <li>
+                    <img src="../img/bg7.jpg" alt="">
+                    <div>
+                        <p class="r_title">云马智行车C1小巧清新，简洁流畅的线条为小城市骑行增添一抹亮丽色彩</p>
+                        <span class="fl">
+                            <span><img src="./../css/img/tx.jpg" alt=""> 苏苏</span>
+                            <span>2016-01-25</span>
+                        </span>
+                        <span class="fr">
+                            <span>3</span>
+                            <span>3</span>
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <img src="../img/bg6.jpg" alt="">
+                    <div>
+                        <p class="r_title">怎么骑都不会累的智能自行车：云马C1试骑体验</p>
+                        <span class="fl">
+                            <span><img src="./../css/img/tx.jpg" alt=""> 苏苏</span>
+                            <span>2016-01-25</span>
+                        </span>
+                        <span class="fr">
+                            <span>3</span>
+                            <span>3</span>
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <img src="../img/bg5.jpg" alt="">
+                    <div>
+                        <p class="r_title">声音不是最优秀，但它形音完美的结合，足够打动人心</p>
+                        <span class="fl">
+                            <span><img src="./../css/img/tx.jpg" alt=""> 苏苏</span>
+                            <span>2016-01-25</span>
+                        </span>
+                        <span class="fr">
+                            <span>3</span>
+                            <span>3</span>
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <img src="../img/bg4.jpg" alt="">
+                    <div>
+                        <p class="r_title">内在与颜值并重，MO智能体质分析仪解开你的身体密码</p>
+                        <span class="fl">
+                            <span><img src="./../css/img/tx.jpg" alt=""> 苏苏</span>
+                            <span>2016-01-25</span>
+                        </span>
+                        <span class="fr">
+                            <span>3</span>
+                            <span>3</span>
+                        </span>
+                    </div>
+                </li>
+            </ul>
         </div>
+    <div class="use_main_right fr">
+        <h3>极果体验师</h3>
+        <img src="./../img/tiyanImg.jpg" alt="">
+        <p>第一时间体验新品，大众试用优先通过，还有定向邀请试用，新品玩到手软！</p>
+        <h4>要求</h4>
+        <p>是某个领域的大神级玩家，在社交网络或圈子里有大影响力，善写作会拍摄。</p>
+        <h4>申请</h4>
+        <p>1. 关注极果公众号：jguojguo<br>
+            （或扫描下方二维码）</p>
+        <p>2. 在公众号内回复：体验师</p>
+
+        <h3 class="h3_last">关注我们</h3>
+        <img src="../img/myCode.jpg" alt="">
     </div>
+</div>
     <!-- 最底部信息部分 -->
-    <!-- <div class="footer">
+    <div class="footer">
         <div class="ft_bx">
             <div class="erweima"></div>
             <div class="jiguo">
                 <!-- <img src="./img/code.png" alt=""> -->
-                <!-- <p>全球酷玩试用导购平台酷·新奇·好玩·品质</p>
+                <p>全球酷玩试用导购平台酷·新奇·好玩·品质</p>
                 <p>微信添加"JguoJguo"获取我们的服务。</p>
             </div>
             <p class="banquan">&copy; 2016极果版权所有</p>
@@ -121,41 +173,8 @@
             <dd>商务合作：BD@jiguo.com</dd>
             <dd>CEO邮箱：CEO@jiguo.com</dd>
         </dl>
-    </div> --> -->
+    </div>
 </body>
 
 </html>
-<script>
-    function olk() {
-        var ajax = new XMLHttpRequest() || new ActiveXObject('Microsoft.XMLHTTP');
-        ajax.open('get', 'http://192.168.1.29:3000/report/new', 'true')
-        ajax.send()
-        ajax.onreadystatechange = function () {
-            if (ajax.readyState == 4) {
-                if (ajax.status == 200) {
-                    var j_data = JSON.parse(ajax.responseText);
-                    // console.log(j_data);
-                    show(j_data)
-                } else {
-                    console.log('请求失败')
-                }
-            }
-        }
-
-
-    }
-
-
-    function show(obj_) {
-        var ul_ = document.getElementsByClassName('box_left')[0];
-        var str = '';
-        console.log(obj_);
-        for (var i = 0; i < obj_.length; i++) {
-            str += '<div>';
-            str += '<img src="' + obj_[i].img + '">';
-            str += '</div>';
-        }
-        ul_.innerHTML = str;
-
-    }
-</script>
+<script src="./js/idnex1.js"></script>

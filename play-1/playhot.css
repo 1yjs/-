@@ -1,0 +1,129 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+body {
+    width: 100%;
+    height: 1000px;
+}
+
+.middle {
+    margin-top: 20px;
+    background-color: #F7F7F7;
+    width: 1300px;
+    height: 2300px;
+    /* z-index: 1; */
+
+}
+
+/* .play-1{
+width: 1100px;
+height: 750px;
+border: 1px solid black;
+z-index: 2;
+} */
+#box-1 {
+    width: 200px;
+    height: 200px;
+    border: 1px solid red;
+}
+
+#img {
+    width: 200px;
+    height: 30px;
+}
+
+#box-1>.text,
+.description,
+.price,
+.like,
+.words {
+    font-size: 12px;
+}
+
+.hot {
+    width: 1300px;
+    margin: 0 auto;
+}
+
+
+h1 {
+    text-align: center;
+    margin: 30px auto;
+}
+
+.hot1>div {
+    float: left;
+    font-size: 15px;
+}
+
+.hot1 {
+    width: 500px;
+    height: 20px;
+    margin: 0 auto;
+}
+
+.hot1>div {
+    margin: 0 68px;
+}
+    /* .dzsy{
+    color: coral;
+    border-bottom: 5px solid coral;
+} */
+.hot2{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#list_1{
+    width: 1000px;
+    height: 200px;
+}
+
+
+#list_1>li {
+    width: 220px;
+    height: 275px;
+    border: 1px solid black;
+    margin-left: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    float: left;
+}
+
+#list_1 img {
+    width: 220px;
+    height: 150px;
+}
+#list_1 p{
+    font-size: 14px;
+    margin: 5px 8px;
+}
+
+/* .like3{
+    padding: 0 8px;
+} */
+#list_1>li>div:nth-child(3){
+    font-size: 14px;
+    color: rgb(128, 130, 133);
+    margin: 10px 10px;
+}
+#list_1>li>div:nth-child(4)>span{
+color: red;
+font-size: 17px;
+
+}
+#list_1>li>div:nth-child(4)>div{
+float: right;
+font-size: 14px;
+margin-right: 10px;
+
+}
+#
+

@@ -1,0 +1,382 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+input{
+    outline: none;
+}
+.clear{
+    overflow: hidden;
+    height: 0;
+    clear: both;
+}
+button{
+    cursor: pointer;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.bx{
+    width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* 样式 */
+
+
+/* 登录窗口 */
+.wrap{
+    position: fixed;
+    width: 100%;
+    /* height: 100%; */
+    height: 1600px;
+    background-color: rgba(0, 0, 0, .4);
+    z-index: 99;
+
+    display: none;
+}
+.login_{
+    width: 715px;
+    height: 321px;
+    background-color: #fff;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 99;
+    padding: 25px 50px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border-bottom: 5px solid #fe584d;
+}
+.login_ .close_{
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+}
+.login_ .login_left{
+    color: #595959;
+    width: 340px;
+}
+.login_ .login_left a{
+    color: #595959;
+}
+.login_ .login_left h3{
+    font-size: 18px;
+    color: #595959;
+    margin-bottom: 25px;
+}
+.login_ .login_left div{
+    position: relative;
+}
+.login_ .login_left div:nth-child(2) input,
+.login_ .login_left div:nth-child(3) input{
+    color: #757575;
+    width: 340px;
+    height: 44px;
+    padding: 8px 0 8px 36px;
+    box-sizing: border-box;
+    border: 1px solid #d9d9d9;
+}
+.login_ .login_left div:nth-child(3){
+    margin: 10px 0 20px;
+}
+.login_ .login_left div:nth-child(2) span,
+.login_ .login_left div:nth-child(3) span{
+    position: absolute;
+    width: 13px;
+    height: 20px;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.login_ .login_left div:nth-child(2) span{
+    background: url(./../css/img/icon-global.png) -486px -2px;
+}
+.login_ .login_left div:nth-child(3) span{
+    background: url(./../css/img/icon-global.png) -485px -37px;
+}
+.login_ .login_left div:nth-child(4){
+    font-size: 12px;
+    line-height: 40px; 
+    margin-bottom: 25px;
+}
+.login_ .login_left div:nth-child(4) button{
+    float: right;
+    width: 145px;
+    color: #fff;
+    height: 40px;
+    background-color: #fe584d;
+    border: none;
+    border-radius: 18px;
+}
+.login_ .login_left div:nth-child(5){
+    font-size: 12px;
+}
+.login_ .login_left div:nth-child(5) span:nth-child(2){
+    float: right ;
+}
+.login_ .l_line{
+    float: left;
+    width: 1px;
+    height: 255px;
+    background-color: #ededed;
+    margin-left: 55px;
+}
+.login_ .login_right{
+    width: 180px;
+    text-align: center;
+}
+.login_ .login_right p{
+    color: #595995;
+    margin-bottom: 28px;
+}
+.login_ .login_right>div{
+    position: relative;
+    margin-top: 18px;
+}
+.login_ .login_right>div div{
+    position: absolute;
+    width: 1px;
+    height: 17px;
+    background-color: #e0e0e0;
+    left: 50%;
+    top: 3px;
+}
+.login_ .login_right>div .l_r_tubiao{
+    float: left;
+    padding-left: 20px;
+    color: #808080;
+}
+.login_ .login_right>div .l_r_tubiao span{
+    float: left;
+    width: 30px;
+    height: 22px;
+    margin-top: 3px;
+}
+.login_ .login_right>div .weibo span{
+    background: url(../css/img/icon-global.png) no-repeat -477px -150px;
+}
+.login_ .login_right>div .qq span{
+    background: url(../css/img/icon-global.png) no-repeat -480px -188px;
+}
+
+/* 主页导航 */
+.index_nav{
+    width: 1000px;
+    margin: 0 auto;
+    height: 74px;
+    background: #fff url(./../img/logonew.png) no-repeat left center;
+    background-size: 133px;
+}
+.index_nav .logo_back{
+    float: left;
+    width: 150px;
+    height: 74px;
+}
+.index_nav .nav_list{
+    padding-left: 200px;
+    line-height: 74px;
+
+}
+.index_nav .nav_list li{
+    float: left;
+    margin-right: 50px;
+}
+.index_nav .nav_list li a{
+    color: #333;
+}
+.index_nav .nav_list li.the a{
+    color: #f92929;
+}
+
+.index_nav .nav_list li a:hover{
+    color: #f92929;
+}
+.index_nav span{
+    float: right;
+}
+.index_nav .search{
+    width: 24px;
+    height: 26px;
+    margin-top: 25px;
+    margin-right: 25px;
+    cursor: pointer;
+    /* background: url(./img/search.png) no-repeat 0 center; */
+}
+.index_nav .reg,
+.index_nav .login{
+    padding: 5px 10px;
+    box-sizing: border-box;
+    border: 1px solid #f8563d;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.index_nav a{
+    color: #ff3a4f;
+}
+.nav_b_line{
+    height: 1px;
+    background-color: #d0d0d0;
+    box-shadow: 0 -1px 2px #d0d0d0;
+}
+
+
+/* 主页 试用-产品 下的图片 */
+.nav_top_img{
+    height: 300px;
+    overflow: hidden;
+    background: #f6bf6f;
+}
+.nav_top_img .nav_bx{
+    height: 300px;
+    box-shadow: -50px 0 50px #f6bf6f;
+    background: url(./img/original.jpg) -450px 0px repeat-x;
+}
+.nav_top_img .nav_bx{
+    width: 1000px;
+    margin: 0 auto;
+    color: #fff;
+}
+.nt_right{
+    margin-top: 45px;
+    animation: nav_move .5s;
+}
+.nt_right h1{
+    font-weight: 400;
+}
+.nt_right .nav_r_list{
+    overflow: hidden;
+    margin: 25px 0;
+}
+.nt_right .nav_r_list li{
+    float: left;
+    margin: 0 10px 0 5px;
+    background-color: rgba(255, 255, 255, .35);
+    border-radius: 5px;
+    padding: 5px;
+}
+.nt_right button{
+    font-size: 23px;
+    border: none;
+    margin-top: 20px;
+    width: 243px;
+    height: 48px;
+    border-radius: 3px;
+    background-color: #fe5341;
+    color: #fff;
+}
+
+@keyframes nav_move {
+    0%{
+        transform: translate(280px,-260px);
+    }
+}
+
+
+
+
+/* 最底部信息部分 */
+.footer{
+    height: 360px;
+    background-color: #505050;
+    position: relative;
+    box-sizing: border-box;
+    padding-top: 40px;
+    font-size: 12px;
+    color: #a8a2ac;
+   top: -17px;
+}
+.footer a{
+    color: #a8a2ac;
+}
+
+.footer .banquan{
+    font-size: 12px;
+    color: #ccc;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+}
+.footer .ft_bx{
+    width: 1000px;
+    margin: 0 auto;
+
+}
+.footer .erweima{
+    width: 160px;
+    height: 160px;
+    border-radius: 3px;
+    background: url(./../img/myCode.jpg) no-repeat;
+    background-size: 360px;
+    margin-right: 20px;
+    float: left;
+}
+.footer .jiguo{
+    float: left;
+    width: 126px;
+}
+.footer .jiguo p:nth-child(2){
+    margin: 30px 0 20px;
+}
+.footer dl{
+    float: left;
+    margin-left: 30px;
+}
+.footer dl dt{
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+.footer dl dt a{
+    color: #fff;
+}
+.footer dl dd{
+    line-height: 20px;
+}
+.footer dl:nth-child(3){
+    width: 140px;
+}
+.footer dl:nth-child(3) dd {
+    float: left;
+    width: 70px;
+}
+
+
+/* 加载效果 */
+@keyframes turn_around{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+/* 动画 */
+@keyframes shan_ {
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: .8;
+    }
+    100%{
+        opacity: 1;
+    }
+}
