@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,17 +9,18 @@
     <link rel="stylesheet" href="./public/css/commen.css">
     <link rel="stylesheet" href="./playhot.css">
 </head>
+
 <body>
-     <!-- 首页的头部 -->
-     <div class="index_nav">
+    <!-- 首页的头部 -->
+    <div class="index_nav">
         <a href="./../index.html" class="logo_back"></a>
         <ul class="nav_list">
 
-            <li><a href="./index.html">首页</a></li>
-            <li><a href="./play.html">酷玩</a></li>
-            <li><a href="./guid.html">导购</a></li>
-            <li><a href="./use/useExpExc.html">试用</a></li>
-            <li><a href="./report/reportNew.html">报告</a></li>
+            <li><a class="nav_a_active" href="../use/index.html">首页</a></li>
+            <li><a href="../play/play_最新.html">酷玩</a></li>
+            <li><a href="../guid/guid.html">导购</a></li>
+            <li><a href="../use/help1.html">试用</a></li>
+            <li><a href="../report/report.html">报告</a></li>
         </ul>
         <span class="reg"><a href="./regist.html">注册</a></span>
 
@@ -29,9 +31,11 @@
     <div class="hot">
         <h1>发现酷玩</h1>
         <div class="hot1">
-            <div >最新</div>
+            <div>最新</div>
             <div onclick="olk()" class="haha">最热</div>
-            <div >品类<a href="./play.style.html"></a></div>
+            <div>品类
+                <a href="./play.style.html"></a>
+            </div>
             <div class="clear"></div>
         </div>
         <div class="middle">
@@ -58,64 +62,65 @@
             </div>
         </div>
     </div>
-   <!-- 最底部信息部分 -->
-   <div class="footer">
-    <div class="ft_bx">
-        <div class="erweima"></div>
-        <div class="jiguo">
-            <img src="./img/code.png" alt="">
-            <p>全球酷玩试用导购平台酷·新奇·好玩·品质</p>
-            <p>微信添加"JguoJguo"获取我们的服务。</p>
+    <!-- 最底部信息部分 -->
+    <div class="footer">
+        <div class="ft_bx">
+            <div class="erweima"></div>
+            <div class="jiguo">
+                <img src="./img/code.png" alt="">
+                <p>全球酷玩试用导购平台酷·新奇·好玩·品质</p>
+                <p>微信添加"JguoJguo"获取我们的服务。</p>
+            </div>
+            <p class="banquan">&copy; 2016极果版权所有</p>
         </div>
-        <p class="banquan">&copy; 2016极果版权所有</p>
+        <dl>
+            <dt><a href="./help.html">免费试用</a></dt>
+            <dd>试用流程</dd>
+            <dd>如何提高成功率</dd>
+        </dl>
+        <dl>
+            <dt>友情链接</dt>
+            <dd>智东西</dd>
+            <dd>WEIBUSI</dd>
+            <dd>搜狐IT</dd>
+            <dd>腾讯科技</dd>
+            <dd>搜狐数码</dd>
+            <dd>凤凰科技</dd>
+            <dd>凤凰数码</dd>
+            <dd>PConline</dd>
+            <dd>泡泡网</dd>
+            <dd>3W咖啡</dd>
+            <dd>ZUK社区</dd>
+            <dd>亿觅emie</dd>
+            <dd>极客公园</dd>
+            <dd>易迅易启玩</dd>
+            <dd>果库</dd>
+        </dl>
+        <dl>
+            <dt>购买攻略</dt>
+            <dd>美亚海淘教程</dd>
+            <dd>日亚海淘教程</dd>
+            <dd>海淘转运攻略</dd>
+            <dd>kickstarter 众筹购买攻略</dd>
+            <dd>indiegogo 众筹购买攻略</dd>
+        </dl>
+        <dl>
+            <dt><a href="../use/about.html">厂商合作</a></dt>
+            <dd>关于极果</dd>
+            <dd>联系我们</dd>
+            <dd>商务合作：BD@jiguo.com</dd>
+            <dd>CEO邮箱：CEO@jiguo.com</dd>
+        </dl>
     </div>
-    <dl>
-        <dt><a href="./help.html">免费试用</a></dt>
-        <dd>试用流程</dd>
-        <dd>如何提高成功率</dd>
-    </dl>
-    <dl>
-        <dt>友情链接</dt>
-        <dd>智东西</dd>
-        <dd>WEIBUSI</dd>
-        <dd>搜狐IT</dd>
-        <dd>腾讯科技</dd>
-        <dd>搜狐数码</dd>
-        <dd>凤凰科技</dd>
-        <dd>凤凰数码</dd>
-        <dd>PConline</dd>
-        <dd>泡泡网</dd>
-        <dd>3W咖啡</dd>
-        <dd>ZUK社区</dd>
-        <dd>亿觅emie</dd>
-        <dd>极客公园</dd>
-        <dd>易迅易启玩</dd>
-        <dd>果库</dd>
-    </dl>
-    <dl>
-        <dt>购买攻略</dt>
-        <dd>美亚海淘教程</dd>
-        <dd>日亚海淘教程</dd>
-        <dd>海淘转运攻略</dd>
-        <dd>kickstarter 众筹购买攻略</dd>
-        <dd>indiegogo 众筹购买攻略</dd>
-    </dl>
-    <dl>
-        <dt><a href="../use/about.html">厂商合作</a></dt>
-        <dd>关于极果</dd>
-        <dd>联系我们</dd>
-        <dd>商务合作：BD@jiguo.com</dd>
-        <dd>CEO邮箱：CEO@jiguo.com</dd>
-    </dl>
-</div>
 </body>
+
 </html>
 <script>
     function olk() {
         var ajax = new XMLHttpRequest() || new ActiveXObject('Microsoft.XMLHTTP');
         ajax.open('get', 'http://192.168.1.29:3000/play/new');
         ajax.send();
-        ajax.onreadystatechange = function () {
+        ajax.onreadystatechange = function() {
             if (ajax.readyState == 4) {
                 if (ajax.status == 200) {
                     var j_data = JSON.parse(ajax.responseText);
@@ -181,7 +186,7 @@
                 str += '<span>'
                 str += obj_[i][h].like
                 str += '</span>'
-                // str +='<img src="' + + '">'
+                    // str +='<img src="' + + '">'
                 str += '<span>'
                 str += obj_[i][h].words
                 str += '</span>'

@@ -45,11 +45,11 @@
     <div class="index_nav">
         <a href="" class="logo_back"></a>
         <ul class="nav_list">
-            <li><a href="">首页</a></li>
-            <li><a href="">酷玩</a></li>
-            <li><a href="">导购</a></li>
-            <li><a href="">试用</a></li>
-            <li><a href="">报告</a></li>
+            <li><a class="nav_a_active" href="../use/index.html">首页</a></li>
+            <li><a href="../play/play_最新.html">酷玩</a></li>
+            <li><a href="../guid/guid.html">导购</a></li>
+            <li><a href="../use/help1.html">试用</a></li>
+            <li><a href="../report/report.html">报告</a></li>
         </ul>
         <span class="reg"><a href="">注册</a></span>
         <span class="login" id="login_"><a href="javascript:;">登录</a></span>
@@ -174,7 +174,7 @@
         var ajax = new XMLHttpRequest() || new ActiveXObject('Microsoft.XMLHTTP');
         ajax.open('get', 'http://192.168.1.29:3000/play/new');
         ajax.send();
-        ajax.onreadystatechange = function () {
+        ajax.onreadystatechange = function() {
             if (ajax.readyState == 4) {
                 if (ajax.status == 200) {
                     var j_data = JSON.parse(ajax.responseText);
@@ -240,7 +240,7 @@
                 str += '<span>'
                 str += obj_[i][h].like
                 str += '</span>'
-                // str +='<img src="' + + '">'
+                    // str +='<img src="' + + '">'
                 str += '<span>'
                 str += obj_[i][h].words
                 str += '</span>'
