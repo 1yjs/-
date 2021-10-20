@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>极果注册</title>
+    <link rel="stylesheet" href="../css/top&bottom.css">
+    <script src="../js/jquery.min.js"></script>
+    <style>
+        section {
+            width: 100%;
+        }
+        
+        .section_box {
+            width: 70%;
+            height: 700px;
+            border-radius: 10px;
+            margin: 20px auto;
+            background-color: #FFFFFF;
+            display: flex;
+            /* 居中对齐 */
+            justify-content: flex-start;
+            /* 自上而下排列 */
+            flex-direction: column;
+            align-items: center
+        }
+        
+        .section_box>p {
+            width: 100%;
+            height: 20px;
+            font-size: 18px;
+            text-indent: 20px;
+            margin-top: 20px;
+        }
+        
+        .section_box>p>span {
+            float: left;
+            width: 8px;
+            height: 20px;
+            background-color: red;
+        }
+        
+        .form {
+            margin-top: 100px;
+            height: 400px;
+            display: flex;
+            justify-content: space-around;
+            /* 自上而下排列 */
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        
+        .form>input {
+            width: 300px;
+            height: 35px;
+            border-radius: 8px;
+            border: 0;
+            background-color: #f0f0f0;
+            text-indent: 10px;
+        }
+        
+        .form>div {
+            width: 300px;
+            height: 35px;
+            border-radius: 8px;
+            border: 0;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            align-items: center;
+        }
+        
+        .form input:focus {
+            outline: none;
+        }
+        
+        .form>div>input {
+            width: 170px;
+            height: 35px;
+            border-radius: 8px;
+            border: 0;
+            background-color: #f0f0f0;
+            text-indent: 10px;
+        }
+        
+        .form>div>div {
+            cursor: pointer;
+            width: 110px;
+            height: 35px;
+            border-radius: 8px;
+            background-color: white;
+            color: #888;
+            font-size: 13px;
+            text-align: center;
+            line-height: 35px;
+            border: 1px solid rgb(206, 206, 206);
+        }
+        
+        .form>button {
+            cursor: pointer;
+            width: 300px;
+            height: 35px;
+            border-radius: 5px;
+            text-align: center;
+            line-height: 38px;
+            color: white;
+            background-color: red;
+            border: 0;
+            font-size: 15px;
+        }
+        
+        .form>label {
+            color: red;
+            font-size: 13px;
+        }
+        
+        .createImgCode {
+            width: 110px;
+            height: 35px;
+            font-size: 16px;
+            text-align: center;
+            line-height: 35px;
+            border: 1px solid rgb(206, 206, 206);
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <nav>
+            <div class="nav_box">
+                <div class="nav_logo"></div>
+                <div class="nav_ul">
+                    <ul>
+                        <li><a class="nav_a_active" href="../use/index.html">首页</a></li>
+                        <li><a href="#">酷玩</a></li>
+                        <li><a href="#">导购</a></li>
+                        <li><a href="#">试用</a></li>
+                        <li><a href="#">报告</a></li>
+                    </ul>
+                </div>
+                <div class="nav_regist">
+                    <div class="nav_search"></div>
+                    <button><a href="../use/regist.html">注册</a></button>
+                </div>
+            </div>
+        </nav>
+        <section>
+            <div class="section_box">
+                <p><span></span>注册极果</p>
+                <form class="form" action="" method="#">
+                    <input type="text" id="phone" placeholder="请输入登录手机号">
+                    <label class="phone" for=""></label>
+                    <div>
+                        <input type="text" id="imgCode" placeholder="请输入图片校验码">
+                        <label class="createImgCode" for="#"></label>
+                        <!-- <img src="../img/imgCode.jpg" alt=""> -->
+                    </div>
+                    <label class="imgCode" for=""></label>
+                    <div>
+                        <input type="text" id="code" placeholder="请输入4位数字验证码">
+                        <div class="getCode">获取验证码</div>
+                    </div>
+                    <label class="code" for=""></label>
+                    <input type="text" id="uName" placeholder="请输入用户名">
+                    <label class="uName" for=""></label>
+                    <input type="password" id="pasd1" placeholder="请输入新密码">
+                    <label class="pasd1" for=""></label>
+                    <input type="password" id="pasd2" placeholder="确定新密码">
+                    <label class="pasd2" for=""></label>
+                    <button>立即注册</button>
+                </form>
+            </div>
+        </section>
+        <footer>
+            <div class="footer_box">
+                <div class="footer_left">
+                    <img src="../img/code.png" alt="">
+                    <img src="../img/logoImg.jpg" alt="">
+                    <p>全球酷玩试用导购平台</p>
+                    <p>酷·新奇·好玩·品质</p>
+                    <p>微信添加'Jguojguo'获取我们的服务</p>
+                </div>
+                <dl>
+                    <dt>免费试用</dt>
+                    <dd>试用流程</dd>
+                    <dd>如何提高成功率</dd>
+                </dl>
+                <dl>
+                    <dt>友情链接</dt>
+                    <dd>智东西</dd>
+                    <dd>WEIBUSI</dd>
+                    <dd>搜狐IT</dd>
+                    <dd>腾讯科技</dd>
+                    <dd>搜狐数码</dd>
+                    <dd>凤凰科技</dd>
+                    <dd>凤凰数码</dd>
+                    <dd>PConline</dd>
+                    <dd>泡泡网</dd>
+                    <dd>3W咖啡</dd>
+                    <dd>ZUK社区</dd>
+                    <dd>亿觅emie</dd>
+                    <dd>极客公园</dd>
+                    <dd>易迅易启玩</dd>
+                    <dd>果库</dd>
+                </dl>
+                <dl>
+                    <dt>购买攻略</dt>
+                    <dd>美亚海淘教程</dd>
+                    <dd>日亚海淘教程</dd>
+                    <dd>海淘转运攻略</dd>
+                    <dd>kickstarter 众筹购买攻略</dd>
+                    <dd>indiegogo 众筹购买攻略</dd>
+                </dl>
+                <dl>
+                    <dt>厂商合作</dt>
+                    <dd>关于极果</dd>
+                    <dd>联系我们</dd>
+                    <dd>商务合作：BD@jiguo.com</dd>
+                    <dd>CEO邮箱：CEO@jiguo.com</dd>
+                </dl>
+
+            </div>
+            <p>㉢2016 极果版权所有</p>
+        </footer>
+    </div>
+</body>
+
+</html>
+<script>
+    var iCodeReg = getImgCode().toLowerCase();
+    var codeReg = getCode();
+    $(".form").change(function() {
+        var reg;
+        var phone = $("#phone").val();
+        var imgCode = $("#imgCode").val().toLowerCase();
+        var code = $("#code").val();
+        var uName = $("#uName").val();
+        var pasd1 = $("#pasd1").val();
+        var pasd2 = $("#pasd2").val();
+        $("#phone").blur(function() {
+            reg = /^(0|86|17951)?(13[0-9]|15[012356789]|166|17[3678]|18[0-9]|14[57])[0-9]{8}$/;
+            if (phone != reg) {
+                $(".phone").text("! 请输入正确的手机号");
+            } else {
+                $(".phone").text("");
+            }
+        })
+        $("#imgCode").blur(function() {
+            reg = iCodeReg;
+            if (imgCode != reg) {
+                console.log(reg);
+                console.log(imgCode);
+                $(".imgCode").text("! 校验码错误");
+                reg = getImgCode();
+                $(".createImgCode").text(iCodeReg)
+            } else {
+                $(".imgCode").text("");
+                $(".createImgCode").text(reg);
+            }
+        })
+        $("#pasd2").blur(function() {
+            if (pasd2 !== pasd1) {
+                $(".pasd2").text("! 两次密码不同");
+            } else {
+                $(".pasd2").text("");
+            }
+        })
+
+    })
+
+    function getImgCode() {
+        var arr = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+        var str = '';
+        for (var i = 0; i < 4; i++)
+            str += '' + arr[Math.floor(Math.random() * arr.length)];
+        return str;
+    }
+
+    function getCode() {
+        var arr = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+        var str = '';
+        for (var i = 0; i < 4; i++)
+            str += '' + arr[Math.floor(Math.random() * arr.length)];
+        return str;
+    }
+    $(".createImgCode").text(iCodeReg);
+</script>

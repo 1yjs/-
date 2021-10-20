@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>极果首页</title>
+    <link rel="stylesheet" href="../css/top&bottom.css">
+    <link rel="stylesheet" href="../css/returnTop.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/doT.min.js"></script>
+    <link rel="stylesheet" href="../css/index_section.css">
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+    <script src="../js/swiper-bundle.min.js"></script>
+    <style>
+        .swiper_box {
+            width: 100%;
+            background-color: white;
+            position: relative;
+        }
+        
+        .swiper-container {
+            margin-top: 20px;
+            width: 70%;
+            height: 360px;
+        }
+        
+        .swiper-slide>div {
+            cursor: pointer;
+            width: 220px;
+            height: 270px;
+            background-color: white;
+            border-radius: 8px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            position: relative;
+            border: 1px solid rgb(221, 221, 221);
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .swiper-slide>div>span {
+            background-color: red;
+            position: absolute;
+            right: 0;
+            z-index: 2;
+            color: white;
+            text-align: center;
+            padding: 2px 5px;
+            font-size: 13px;
+            border-bottom-left-radius: 8px;
+        }
+        
+        .swiper-slide>div>img {
+            width: 100%;
+        }
+        
+        .swiper-slide>div>p {
+            width: 100%;
+            text-align: center;
+        }
+        
+        .swiper-slide>div>p:nth-of-type(1) {
+            font-size: 14px;
+            font-weight: 600;
+            width: 90%;
+            margin: 0 auto;
+        }
+        
+        .swiper-slide>div>p:nth-of-type(2) {
+            font-size: 14px;
+            clear: both;
+            position: absolute;
+            bottom: 35px;
+        }
+        
+        .swiper-slide>div>p:nth-of-type(2)>span {
+            color: red;
+        }
+        
+        .swiper-slide>div>p:nth-of-type(3) {
+            font-size: 12px;
+            color: red;
+            position: absolute;
+            bottom: 20px;
+        }
+        
+        .swiper-slide>div>div {
+            width: 100%;
+            height: 20px;
+            color: red;
+            position: absolute;
+            bottom: 70px;
+        }
+        
+        .swiper-slide>div>div>span {
+            float: left;
+            display: block;
+            line-height: 20px;
+            text-align: center;
+            font-size: 12px;
+            position: relative;
+            left: 75px;
+            top: 5px;
+            border: 1px solid red;
+            width: 40px;
+            height: 20px;
+            border-radius: 6px;
+        }
+        
+        .swiper-slide>div>div>span:nth-of-type(1) {
+            margin-left: 5px;
+            left: 50px;
+        }
+        
+        .special-slide>div>span {
+            background-color: #FCF5C7;
+            color: #DAC69A;
+        }
+        
+        .special-slide>div>div>span {
+            color: #92C597;
+            border: #92C597 1px solid;
+        }
+        
+        .special-slide>div>p:nth-of-type(3) {
+            color: #92C597;
+        }
+        
+        .swiper-button-next {
+            right: 100px;
+        }
+        
+        .swiper-button-prev {
+            left: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <nav>
+            <div class="nav_box">
+                <div class="nav_logo"></div>
+                <div class="nav_ul">
+                    <ul>
+                        <li><a class="nav_a_active" href="../use/index.html">首页</a></li>
+                        <li><a href="#">酷玩</a></li>
+                        <li><a href="#">导购</a></li>
+                        <li><a href="#">试用</a></li>
+                        <li><a href="#">报告</a></li>
+                    </ul>
+                </div>
+                <div class="nav_regist">
+                    <div class="nav_search"></div>
+                    <button><a href="../use/regist.html">注册</a></button>
+                </div>
+            </div>
+        </nav>
+        <section>
+            <div class="original">
+                <div class="original_text">
+                    <p>幻响小贝HiFi2.1音箱</p>
+                    <div class="original_text_span">
+                        <span>126人申请</span>
+                        <span>￥599</span>
+                        <span>20台</span>
+                    </div>
+                    <p>申请时间剩余：13天5小时37分</p>
+                    <button>立即申请</button>
+                </div>
+            </div>
+            <div class="swiper_box">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div>
+                                <img src="http://192.168.1.29:3000/img/hot7.jpg" alt="">
+                                <span>首发</span>
+                                <p>风光大片信手拈来！vivo X6Plus是一台拍照利器</p>
+                                <div>
+                                    <span>2032</span>
+                                    <span>20台</span>
+                                </div>
+                                <p><span>1932</span>申请</p>
+                                <p>剩余事件2天</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide special-slide">
+                            <div>
+                                <img src="http://192.168.1.29:3000/img/hot4.jpg" alt="">
+                                <span>体验师转享</span>
+                                <p>巴慕达 The Toaster 烤面包机</p>
+                                <div>
+                                    <span>2032</span>
+                                    <span>20台</span>
+                                </div>
+                                <p><span>1932</span>申请</p>
+                                <p>查看试用名单</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div>
+                                <img src="http://192.168.1.29:3000/img/hot5.jpg" alt="">
+                                <span>首发</span>
+                                <p>Osprey小鹰户外运动专业腰包</p>
+                                <div>
+                                    <span>2032</span>
+                                    <span>20台</span>
+                                </div>
+                                <p><span>1932</span>申请</p>
+                                <p>剩余事件2天</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div>
+                                <img src="http://192.168.1.29:3000/img/hot2.jpg" alt="">
+                                <span>首发</span>
+                                <p>声音不是最优秀，但它形音完美的结合，足够打动人心</p>
+                                <div>
+                                    <span>2032</span>
+                                    <span>20台</span>
+                                </div>
+                                <p><span>1932</span>申请</p>
+                                <p>剩余事件2天</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <!-- 如果需要导航按钮 -->
+                <div class="swiper-button-prev swiper-button-black"></div>
+                <div class="swiper-button-next swiper-button-black"></div>
+            </div>
+
+            <div class="part1 part">
+                <h2>报告精选<span class="click_more">查看更多</span></h2>
+                <div class="part_box box1">
+                    <div>
+                        <img src="../img/bg1.jpg" alt="">
+                        <p>空气净化器里面学问多得惊呆你，你选对了吗？</p>
+                        <div>
+                            <span>• 苏苏</span>
+                            <span><img src="../img/zan.png">3</span>
+                            <span><img src="../img/reply.png"> 3</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="part2 part">
+                <h2>报告精选<span class="click_more">查看更多</span></h2>
+                <div class="part_box box2">
+                    <div>
+                        <div>
+                            <img src="../img/g1.jpg" alt="">
+                        </div>
+
+                        <p>花万元把蜗居秒变'豪宅'?这12件家具就能帮你办到</p>
+                        <div>
+                            <span><img src="../img/reply.png"> 3</span>
+                            <span><img src="../img/xin.png">3</span>
+                        </div>
+                        <img src="../img/listbg.jpg" alt="">
+                    </div>
+
+                </div>
+            </div>
+            <div class="part3 part">
+                <h2>发现酷玩<span class="click_more part3_more">查看更多</span></h2>
+
+                <div class="part_box box3">
+                    <div>
+                        <img src="../img/bg1.jpg" alt="">
+                        <p>空气净化器里面学问多得惊呆你，你选对了吗？</p>
+                        <h5>可以测定失误成分及营养</h5>
+                        <div>
+                            <span>￥1212</span>
+                            <span><img src="../img/reply.png"> 3</span>
+                            <span><img src="../img/xin.png">3</span>
+                        </div>
+                    </div>
+
+                </div>
+                <p><span></span><span class="botClickMore">点击加载更多</span></p>
+            </div>
+        </section>
+        <footer>
+            <div class="footer_box">
+                <div class="footer_left">
+                    <img src="../img/code.png" alt="">
+                    <img src="../img/logoImg.jpg" alt="">
+                    <p>全球酷玩试用导购平台</p>
+                    <p>酷·新奇·好玩·品质</p>
+                    <p>微信添加'Jguojguo'获取我们的服务</p>
+                </div>
+                <dl>
+                    <dt>免费试用</dt>
+                    <dd>试用流程</dd>
+                    <dd>如何提高成功率</dd>
+                </dl>
+                <dl>
+                    <dt>友情链接</dt>
+                    <dd>智东西</dd>
+                    <dd>WEIBUSI</dd>
+                    <dd>搜狐IT</dd>
+                    <dd>腾讯科技</dd>
+                    <dd>搜狐数码</dd>
+                    <dd>凤凰科技</dd>
+                    <dd>凤凰数码</dd>
+                    <dd>PConline</dd>
+                    <dd>泡泡网</dd>
+                    <dd>3W咖啡</dd>
+                    <dd>ZUK社区</dd>
+                    <dd>亿觅emie</dd>
+                    <dd>极客公园</dd>
+                    <dd>易迅易启玩</dd>
+                    <dd>果库</dd>
+                </dl>
+                <dl>
+                    <dt>购买攻略</dt>
+                    <dd>美亚海淘教程</dd>
+                    <dd>日亚海淘教程</dd>
+                    <dd>海淘转运攻略</dd>
+                    <dd>kickstarter 众筹购买攻略</dd>
+                    <dd>indiegogo 众筹购买攻略</dd>
+                </dl>
+                <dl>
+                    <dt>厂商合作</dt>
+                    <dd>关于极果</dd>
+                    <dd>联系我们</dd>
+                    <dd>商务合作：BD@jiguo.com</dd>
+                    <dd>CEO邮箱：CEO@jiguo.com</dd>
+                </dl>
+
+            </div>
+            <p>㉢2016 极果版权所有</p>
+        </footer>
+        <div class="returnTop returnTop_hid">
+
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    window.onscroll = function() {
+            var scrollTop = document.documentElement.scrollTop;
+            if (scrollTop > 1000) {
+                $(".returnTop").removeClass("returnTop_hid");
+            } else {
+                $(".returnTop").addClass("returnTop_hid");
+            }
+        }
+        // 回到顶部
+    $(".returnTop").click(function() {
+            $('body,html').animate({
+                scrollTop: 0
+            }, 300);
+            return false;
+        })
+        //查看更多 点击事件
+    $(".click_more").click(function() {
+        var h = $(this).parent().next().height();
+        $(this).parent().next()[0].style.height = (h * 2.1) + 'px';
+        $(this).parent().siblings("p").children("span").css("display", "none");
+        $(this)[0].style.display = 'none';
+    })
+
+    $(".botClickMore").click(function() {
+        var h = $(".box3").height();
+        $(".box3")[0].style.height = (h * 2.1) + 'px';
+        $(".part3_more").css("display", "none");
+        $(".click_moren")[0].style.display = 'none';
+    })
+</script>
+<script>
+    function part1Show() {
+        var ajax_ = new XMLHttpRequest() || new ActiveXObject();
+
+        ajax_.open('get', '../json/public.json', true);
+        ajax_.send();
+        ajax_.onreadystatechange = function() {
+            if (ajax_.readyState == 4) {
+
+                if (ajax_.status == 200) {
+                    // 2、找到数据
+                    var data = JSON.parse(ajax_.responseText);
+                    // show(data);
+                    /* dot_5.调用方式  找到模板 把数据传进去*/
+                    // var tmpText = doT.template(模板);
+                    // tmpText(数据源);
+                    var part1_temp = doT.template(document.getElementById("part1_temp").innerHTML);
+                    document.getElementsByClassName("box1")[0].innerHTML = part1_temp(data);
+                } else {
+                    console.log("请求失败！");
+                }
+            }
+        }
+    }
+    part1Show();
+
+    //part2 渲染数据
+    function part2Show() {
+        var ajax_ = new XMLHttpRequest() || new ActiveXObject();
+
+        ajax_.open('get', '../json/playNew.json', true);
+        ajax_.send();
+        ajax_.onreadystatechange = function() {
+            if (ajax_.readyState == 4) {
+
+                if (ajax_.status == 200) {
+                    // 2、找到数据
+                    var data = JSON.parse(ajax_.responseText);
+                    // show(data);
+                    /* dot_5.调用方式  找到模板 把数据传进去*/
+                    // var tmpText = doT.template(模板);
+                    // tmpText(数据源);
+                    var part2_temp = doT.template(document.getElementById("part2_temp").innerHTML);
+                    document.getElementsByClassName("box2")[0].innerHTML = part2_temp(data);
+                } else {
+                    console.log("请求失败！");
+                }
+            }
+        }
+    }
+    part2Show();
+
+    // part3 渲染数据
+    function part3Show() {
+        var ajax_ = new XMLHttpRequest() || new ActiveXObject();
+
+        ajax_.open('get', '../json/playHot.json', true);
+        ajax_.send();
+        ajax_.onreadystatechange = function() {
+            if (ajax_.readyState == 4) {
+
+                if (ajax_.status == 200) {
+                    // 2、找到数据
+                    var data = JSON.parse(ajax_.responseText);
+                    // show(data);
+                    /* dot_5.调用方式  找到模板 把数据传进去*/
+                    // var tmpText = doT.template(模板);
+                    // tmpText(数据源);
+                    var part3_temp = doT.template(document.getElementById("part3_temp").innerHTML);
+                    document.getElementsByClassName("box3")[0].innerHTML = part3_temp(data);
+                } else {
+                    console.log("请求失败！");
+                }
+            }
+        }
+    }
+    part3Show();
+
+    // swiper 渲染数据
+    // function swiperShow() {
+    //     var ajax_ = new XMLHttpRequest() || new ActiveXObject();
+
+    //     ajax_.open('get', '../json/public.json', true);
+    //     ajax_.send();
+    //     ajax_.onreadystatechange = function() {
+    //         if (ajax_.readyState == 4) {
+
+    //             if (ajax_.status == 200) {
+    //                 // 2、找到数据
+    //                 var data = JSON.parse(ajax_.responseText);
+    //                 // show(data);
+    //                 /* dot_5.调用方式  找到模板 把数据传进去*/
+    //                 // var tmpText = doT.template(模板);
+    //                 // tmpText(数据源);
+    //                 var swiper_temp = doT.template(document.getElementById("swiper_temp").innerHTML);
+    //                 document.getElementsByClassName("swiper-wrapper")[0].innerHTML = swiper_temp(data);
+    //             } else {
+    //                 console.log("请求失败！");
+    //             }
+    //         }
+    //     }
+    // }
+    // swiperShow();
+</script>
+<!-- 4.准备模板 -->
+<script id="part1_temp" type="text/x-dot-template">
+    <!-- 6、展示数据 -->
+    {{~it:value:index}}
+    <div>
+        <img src="{{=value.img}}" alt="">
+        <p>{{=value.text}}</p>
+        <div>
+            <span>• {{=value.uName}}</span>
+            <span><img src="../img/reply.png">{{=value.num}}</span>
+            <span><img src="../img/zan.png">{{=value.num}}</span>
+
+        </div>
+    </div>
+    {{~}}
+
+</script>
+<script id="part2_temp" type="text/x-dot-template">
+
+    {{~it:value:index}}
+    <div>
+        <div>
+            <img src="{{=value.img}}" alt="">
+        </div>
+
+        <p>{{=value.text}}</p>
+        <div>
+            <span><img src="../img/reply.png">{{=value.words}}</span>
+            <span><img src="../img/xin.png">{{=value.like}}</span>
+        </div>
+        <img src="../img/listbg.jpg" alt="">
+    </div>
+    {{~}}
+
+</script>
+<script id="part3_temp" type="text/x-dot-template">
+
+    {{~it:value:index}}
+    <div>
+        <img src="{{=value.img}}" alt="">
+        <p>{{=value.text}}</p>
+        <h5>{{=value.description}}</h5>
+        <div>
+            <span>{{=value.price}}</span>
+            <span><img src="../img/reply.png">{{=value.words}}</span>
+            <span><img src="../img/xin.png">{{=value.like}}</span>
+        </div>
+    </div>
+    {{~}}
+</script>
+
+<!-- <script id="swiper_temp" type="text/x-dot-template">
+
+    {{~it:value:index}}
+    <div class="swiper-slide">
+        <div>
+            <img src="{{=value.img}}" alt="">
+            <span>{{=value.info_ty}}</span>
+            <p>{{=value.text}}</p>
+            <div>
+                <span>{{=value.totalnum}}</span>
+                <span>{{=value.num}}台</span>
+            </div>
+            <p><span>{{=value.apply}}</span>申请</p>
+            <p>剩余时间2天</p>
+        </div>
+    </div>
+    {{~}}
+</script> -->
+<script>
+    var mySwiper = new Swiper('.swiper-container', {
+        direction: 'horizontal',
+        loop: true, // 循环模式选项
+        autoplay: true,
+        slidesPerView: 4,
+        spaceBetween: 50,
+        // 如果需要前进后退按钮
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+    })
+</script>

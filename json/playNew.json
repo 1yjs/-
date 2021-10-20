@@ -1,0 +1,65 @@
+[{
+        "img": "http://192.168.1.29:3000/img/hot3.jpg",
+        "text": "Liquid Image 338 运动摄像眼镜",
+        "description": "全新智能眼镜",
+        "price": "￥489",
+        "like": 3,
+        "words": 5
+    },
+    {
+        "img": "http://192.168.1.29:3000/img/hot4.jpg",
+        "text": "巴慕达 The Toaster 烤面包机",
+        "description": "全新智能眼镜",
+        "price": "￥487",
+        "like": 3,
+        "words": 5
+    },
+    {
+        "img": "http://192.168.1.29:3000/img/hot5.jpg",
+        "text": "Osprey小鹰户外运动专业腰包",
+        "description": "全新智能眼镜",
+        "price": "￥486",
+        "like": 5,
+        "words": 5
+    },
+    {
+        "img": "http://192.168.1.29:3000/img/hot6.jpg",
+        "text": "空气净化器里面学问多得惊呆你，你选对了吗？",
+        "description": "全新智能眼镜",
+        "price": "￥485",
+        "like": 5,
+        "words": 5
+    },
+    {
+        "img": "http://192.168.1.29:3000/img/hot1.jpg",
+        "text": "怎么骑都不会累的智能自行车：云马 C1试骑体验",
+        "description": "全新智能眼镜",
+        "price": "￥484",
+        "like": 7,
+        "words": 6
+    },
+    {
+        "img": "http://192.168.1.29:3000/img/hot2.jpg",
+        "text": "声音不是最优秀，但它形音完美的结合，足够打动人心",
+        "description": "全新智能眼镜",
+        "price": "￥483",
+        "like": 7,
+        "words": 8
+    },
+    {
+        "img": "http://192.168.1.29:3000/img/hot7.jpg",
+        "text": "风光大片信手拈来！vivo X6Plus不只是快，还是一台拍照利器",
+        "description": "全新智能眼镜",
+        "price": "￥482",
+        "like": 4,
+        "words": 5
+    },
+    {
+        "img": "http://192.168.1.29:3000/img/hot8.jpg",
+        "text": "到底有没有完美的iPhone手机配件，答案都在这里",
+        "description": "全新智能眼镜",
+        "price": "￥481",
+        "like": 3,
+        "words": 5
+    }
+]
