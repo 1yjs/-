@@ -146,10 +146,10 @@
                 <div class="nav_ul">
                     <ul>
                         <li><a class="nav_a_active" href="../use/index.html">首页</a></li>
-                        <li><a href="#">酷玩</a></li>
-                        <li><a href="#">导购</a></li>
-                        <li><a href="#">试用</a></li>
-                        <li><a href="#">报告</a></li>
+                        <li><a href="../play/play.html">酷玩</a></li>
+                        <li><a href="../guid/guid.html">导购</a></li>
+                        <li><a href="../use/help.html">试用</a></li>
+                        <li><a href="../report/report.html">报告</a></li>
                     </ul>
                 </div>
                 <div class="nav_regist">
@@ -372,8 +372,9 @@
     $(".botClickMore").click(function() {
         var h = $(".box3").height();
         $(".box3")[0].style.height = (h * 2.1) + 'px';
-        $(".part3_more").css("display", "none");
-        $(".click_moren")[0].style.display = 'none';
+        $(this).css("display", "none");
+        $(this).siblings().css("display", "none");
+        $(".part3_more")[0].style.display = 'none';
     })
 </script>
 <script>
