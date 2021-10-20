@@ -1,0 +1,87 @@
+.middle{
+    width: 100%;
+    /* height: 800px; */
+    /* border: 1px solid black; */
+    /* background-color: #F7F7F7; */
+  
+}
+.middle>.report_nav,#new,#hot{
+    text-align: center;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+
+#new,
+#hot {
+    width: 100px;
+    height: 50px;
+    /* border: 1px solid black; */
+    margin: 40px auto;
+    font-size: 20px;
+}
+
+#new {
+    position: absolute;
+    left: 600px;
+}
+
+#hot {
+    position: absolute;
+    right: 600px;
+}
+
+.report_new {
+    width: 100%;
+    height: 1300px;
+    /* border: 1px solid rgb(212, 47, 47); */
+    margin: 100px auto;
+    background-color: #F7F7F7;
+    z-index: 1;
+}
+/* 盒子大小、 */
+.box_left{
+    width: 600px;
+    height: 350px;
+    border: 1px solid red;
+    z-index: 2;
+    margin: 0px 200px;
+   
+}
+.box_right{
+    width: 450px;
+    height: 800px;
+    /* border: 1px solid blue; */
+    margin: -351px 804px;
+    position: absolute;
+}
+#logb{
+    width: 10px;
+    height: 40px;
+    background-color: red;
+}
+.tabh{
+    position: absolute;
+    top: 5px;
+    left: 50px;
+    color: #294A5B;
+}
+#img-1{
+    width: 350px;
+    height: 200px;
+    /* border: 1px solid red; */
+    margin: 20px auto;
+}
+#tabi{
+    position: absolute;
+    width: 10px;
+    height: 40px;
+    background-color: red;
+    left: 0px;
+}
+/* 框架模块部分获取数据渲染 */
+.box_left>div{
+    width: 500px;
+    height: 200px;
+}

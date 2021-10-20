@@ -5,8 +5,211 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/commen.css">
+    <link rel="stylesheet" href="./css/report.min.css">
 </head>
 <body>
-    
+       <!-- 登录窗口 -->
+       <div class="wrap" id="login_wrap">
+        <div class="login_">
+            <div class="close_" id="close_l">×</div>
+            <div class="login_left fl">
+                <h3>极果账号登录</h3>
+                <div><span></span><input type="text" placeholder="手机号"></div>
+                <div><span></span><input type="text" placeholder="密码"></div>
+                <div>
+                    <input type="checkbox">下次自动登录
+                    <button>登录</button>
+                </div>
+                <div>
+                    <span><a href="./regist.html">注册新账号</a></span>
+                    <span>忘记密码？</span>
+                </div>
+            </div>
+            <div class="l_line"></div>
+            <div class="login_right fr">
+                <p>社交网络账号登录</p>
+                <img src="./../img/login_ewm.png" alt="">
+                <div>
+                    <span class="l_r_tubiao weibo"><span></span>微博</span>
+                    <div class="l_r_line"></div>
+                    <span class="l_r_tubiao qq"><span></span>QQ</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 首页的头部 -->
+    <div class="index_nav">
+        <a href="./../index.html" class="logo_back"></a>
+        <ul class="nav_list">
+            <li><a href="../index.html">首页</a></li>
+            <li><a href="../play.html">酷玩</a></li>
+            <li><a href="../guid.html">导购</a></li>
+            <li><a href="../use/use_index.html">试用</a></li>
+            <li><a href="../report/report_index.html">报告</a></li>
+        </ul>
+        <span class="reg"><a href="./../regist.html">注册</a></span>
+        <span class="login" id="login_"><a href="javascript:;">登录</a></span>
+        <span class="search"></span>
+    </div>
+    <div class="nav_b_line"></div>
+
+    <h1>体检报告</h1>
+    <ul class="other_nav">
+        <li class="active"><a href="./report_hot.html">最新</a></li>
+        <li><a href="./report_new.html">最热</a></li>
+    </ul>
+
+    <div class="use_main">
+        <div class="use_main_left fl">
+            <ul id="report_new_list" class="report_list">
+                <li>
+                    <img src="../img/bg1.jpg" alt="">
+                    <div>
+                        <p class="r_title">空气净化器里面学问多得惊呆你，你选对了吗？</p>
+                        <span class="fl">
+                            <span><img src="./../css/img/tx.jpg" alt=""> 苏苏</span>
+                            <span>2016-01-25</span>
+                        </span>
+                        <span class="fr">
+                            <span>3</span>
+                            <span>3</span>
+                        </span>
+                    </div>
+                </li>
+                <li class="bg_about">关于格林威特空气净化器还有4篇报告，点击查看</li>
+                <li>
+                    <img src="../img/bg2.jpg" alt="">
+                    <div>
+                        <p class="r_title">云马智行车C1小巧清新，简洁流畅的线条为小城市骑行增添一抹亮丽色彩</p>
+                        <span class="fl">
+                            <span><img src="./../css/img/tx.jpg" alt=""> 苏苏</span>
+                            <span>2016-01-25</span>
+                        </span>
+                        <span class="fr">
+                            <span>3</span>
+                            <span>3</span>
+                        </span>
+                    </div>
+                </li>
+                <li class="bg_about">关于云马智行车C1还有8篇报告，点击查看</li>
+                <li>
+                    <img src="../img/bg3.jpg" alt="">
+                    <div>
+                        <p class="r_title">怎么骑都不会累的智能自行车：云马C1试骑体验</p>
+                        <span class="fl">
+                            <span><img src="./../css/img/tx.jpg" alt=""> 苏苏</span>
+                            <span>2016-01-25</span>
+                        </span>
+                        <span class="fr">
+                            <span>3</span>
+                            <span>3</span>
+                        </span>
+                    </div>
+                </li>
+                <li class="bg_about">关于云马智行车C1还有8篇报告，点击查看</li>
+                <li>
+                    <img src="../img/bg4.jpg" alt="">
+                    <div>
+                        <p class="r_title">声音不是最优秀，但它形音完美的结合，足够打动人心</p>
+                        <span class="fl">
+                            <span><img src="./../css/img/tx.jpg" alt=""> 苏苏</span>
+                            <span>2016-01-25</span>
+                        </span>
+                        <span class="fr">
+                            <span>3</span>
+                            <span>3</span>
+                        </span>
+                    </div>
+                </li>
+                <li class="bg_about">关于Freeson智能实木音箱还有17篇报告，点击查看</li>
+                <li>
+                    <img src="../img/bg5.jpg" alt="">
+                    <div>
+                        <p class="r_title">内在与颜值并重，MO智能体质分析仪解开你的身体密码</p>
+                        <span class="fl">
+                            <span><img src="./../css/img/tx.jpg" alt=""> 苏苏</span>
+                            <span>2016-01-25</span>
+                        </span>
+                        <span class="fr">
+                            <span>3</span>
+                            <span>3</span>
+                        </span>
+                    </div>
+                </li>
+                <li class="bg_about">关于MO智能体质分析仪还有17篇报告，点击查看</li>
+            </ul>
+        </div>
+        <div class="use_main_right fr">
+           
+            
+            <h3>极果体验师</h3>
+            <img src="./../img/tiyanImg.jpg" alt="">
+            <p>第一时间体验新品，大众试用优先通过，还有定向邀请试用，新品玩到手软！</p>
+            <h4>要求</h4>
+            <p>是某个领域的大神级玩家，在社交网络或圈子里有大影响力，善写作会拍摄。</p>
+            <h4>申请</h4>
+            <p>1. 关注极果公众号：jguojguo<br>
+                （或扫描下方二维码）</p>
+            <p>2. 在公众号内回复：体验师</p>
+
+            <h3 class="h3_last">关注我们</h3>
+            <img src="../img/myCode.jpg" alt="">
+        </div>
+    </div>
+
+
+    <!-- 最底部信息部分 -->
+    <div class="footer">
+        <div class="ft_bx">
+            <div class="erweima"></div>
+            <div class="jiguo">
+                <img src="../img/logoImg.jpg" alt="">
+                <p>全球酷玩试用导购平台酷·新奇·好玩·品质</p>
+                <p>微信添加"JguoJguo"获取我们的服务。</p>
+            </div>
+            <p class="banquan">&copy; 2016极果版权所有</p>
+        </div>
+        <dl>
+            <dt>免费试用</dt>
+            <dd><a href="./../help.html">试用流程</a></dd>
+            <dd>如何提高成功率</dd>
+        </dl>
+        <dl>
+            <dt>友情链接</dt>
+            <dd>智东西</dd>
+            <dd>WEIBUSI</dd>
+            <dd>搜狐IT</dd>
+            <dd>腾讯科技</dd>
+            <dd>搜狐数码</dd>
+            <dd>凤凰科技</dd>
+            <dd>凤凰数码</dd>
+            <dd>PConline</dd>
+            <dd>泡泡网</dd>
+            <dd>3W咖啡</dd>
+            <dd>ZUK社区</dd>
+            <dd>亿觅emie</dd>
+            <dd>极客公园</dd>
+            <dd>易迅易启玩</dd>
+            <dd>果库</dd>
+        </dl>
+        <dl>
+            <dt>购买攻略</dt>
+            <dd>美亚海淘教程</dd>
+            <dd>日亚海淘教程</dd>
+            <dd>海淘转运攻略</dd>
+            <dd>kickstarter 众筹购买攻略</dd>
+            <dd>indiegogo 众筹购买攻略</dd>
+        </dl>
+        <dl>
+            <dt><a href="./about.html">厂商合作</a></dt>
+            <dd>关于极果</dd>
+            <dd>联系我们</dd>
+            <dd>商务合作：BD@jiguo.com</dd>
+            <dd>CEO邮箱：CEO@jiguo.com</dd>
+        </dl>
+    </div>
+<script src="./js/idnex1.js"></script>
 </body>
 </html>
