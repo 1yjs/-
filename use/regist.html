@@ -8,124 +8,7 @@
     <title>极果注册</title>
     <link rel="stylesheet" href="../css/top&bottom.css">
     <script src="../js/jquery.min.js"></script>
-    <style>
-        section {
-            width: 100%;
-        }
-        
-        .section_box {
-            width: 70%;
-            height: 700px;
-            border-radius: 10px;
-            margin: 20px auto;
-            background-color: #FFFFFF;
-            display: flex;
-            /* 居中对齐 */
-            justify-content: flex-start;
-            /* 自上而下排列 */
-            flex-direction: column;
-            align-items: center
-        }
-        
-        .section_box>p {
-            width: 100%;
-            height: 20px;
-            font-size: 18px;
-            text-indent: 20px;
-            margin-top: 20px;
-        }
-        
-        .section_box>p>span {
-            float: left;
-            width: 8px;
-            height: 20px;
-            background-color: red;
-        }
-        
-        .form {
-            margin-top: 100px;
-            height: 400px;
-            display: flex;
-            justify-content: space-around;
-            /* 自上而下排列 */
-            flex-direction: column;
-            align-items: flex-start;
-        }
-        
-        .form>input {
-            width: 300px;
-            height: 35px;
-            border-radius: 8px;
-            border: 0;
-            background-color: #f0f0f0;
-            text-indent: 10px;
-        }
-        
-        .form>div {
-            width: 300px;
-            height: 35px;
-            border-radius: 8px;
-            border: 0;
-            display: flex;
-            justify-content: space-between;
-            flex-direction: row;
-            align-items: center;
-        }
-        
-        .form input:focus {
-            outline: none;
-        }
-        
-        .form>div>input {
-            width: 170px;
-            height: 35px;
-            border-radius: 8px;
-            border: 0;
-            background-color: #f0f0f0;
-            text-indent: 10px;
-        }
-        
-        .form>div>div {
-            cursor: pointer;
-            width: 110px;
-            height: 35px;
-            border-radius: 8px;
-            background-color: white;
-            color: #888;
-            font-size: 13px;
-            text-align: center;
-            line-height: 35px;
-            border: 1px solid rgb(206, 206, 206);
-        }
-        
-        .form>button {
-            cursor: pointer;
-            width: 300px;
-            height: 35px;
-            border-radius: 5px;
-            text-align: center;
-            line-height: 38px;
-            color: white;
-            background-color: red;
-            border: 0;
-            font-size: 15px;
-        }
-        
-        .form>label {
-            color: red;
-            font-size: 13px;
-        }
-        
-        .createImgCode {
-            width: 110px;
-            height: 35px;
-            font-size: 16px;
-            text-align: center;
-            line-height: 35px;
-            border: 1px solid rgb(206, 206, 206);
-            border-radius: 8px;
-        }
-    </style>
+    <link rel="stylesheet" href="../css/regist.css">
 </head>
 
 <body>
@@ -243,17 +126,17 @@
         var pasd2 = $("#pasd2").val();
         $("#phone").blur(function() {
             reg = /^(0|86|17951)?(13[0-9]|15[012356789]|166|17[3678]|18[0-9]|14[57])[0-9]{8}$/;
-            if (phone != reg) {
+            if (!reg.test(phone)) {
+
                 $(".phone").text("! 请输入正确的手机号");
             } else {
+                console.log(reg.test(phone));
                 $(".phone").text("");
             }
         })
         $("#imgCode").blur(function() {
             reg = iCodeReg;
             if (imgCode != reg) {
-                console.log(reg);
-                console.log(imgCode);
                 $(".imgCode").text("! 校验码错误");
                 reg = getImgCode();
                 $(".createImgCode").text(iCodeReg)
