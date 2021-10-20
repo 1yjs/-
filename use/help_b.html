@@ -59,16 +59,16 @@
                 </ul>
 
                 <!-- <ul id="list_1">
-                </ul>
+                </ul>  -->
 
 
-                <ul id="list_2">
-                </ul>
+                <!-- <ul id="list_2">
+                </ul> -->
 
 
 
 
-                <ul id="list_3">
+                <!-- <ul id="list_3">
                 </ul> -->
             </div>
 
@@ -148,7 +148,7 @@
 <script>
     var ys = document.getElementsByClassName('haha')[0];
     var ajax = new XMLHttpRequest() || new ActiveXObject('Microsoft.XMLHTTP');
-    ajax.open('get', 'http://192.168.1.29:3000/useing/public', 'true')
+    ajax.open('get', 'http://192.168.1.29:3000/report/new', 'true')
     ajax.send()
     ajax.onreadystatechange = function () {
         if (ajax.readyState == 4) {
@@ -230,88 +230,6 @@
         })
 
     })
-
-
-
-    // function show_1() {
-    //     var ajax = new XMLHttpRequest() || new ActiveXObject('Microsoft.XMLHttp');
-    //     ajax.open('get', 'http://192.168.1.29:3000/guid/hot', true)
-    //     ajax.send()
-
-    //     ajax.onreadystatechange = function () {
-    //         if (ajax.readyState == 4) {
-    //             if (ajax.status == 200) {
-    //                 var data = JSON.parse(ajax.responseText)
-    //                 showData(data);
-    //             }
-    //         }
-    //     }
-
-
-
-
-    //     function showData(val) {
-    //         var str = '';
-    //         for (var i = 0; i < val.length; i++) {
-    //             // str += '<li>'
-    //             // str += '<img src="' + val[i].img + '"alt="" class="lyh-gu-img">'
-    //             // str += '<span>' + val[i].text + '</span>'
-    //             // str += '<div class="lyh-gu-dz"><img src="../img/zan.png" alt="">' + val[i].like + '<img src="../img/reply.png" alt="">' + val[i].words + '</div>'
-    //             // str += '</li>'
-
-
-    //             str += '<li>';
-
-    //             str += '<div>';
-    //             str += '<img src ="' + obj_[i].img + '">';
-    //             str += '</div >';
-
-    //             str += '<p>';
-    //             str += obj_[i].text;
-    //             str += '</p>';
-
-
-    //             str += '<div>';
-    //             str += '<span>';
-    //             str += obj_[i].totalnum;
-    //             str += '</span>';
-
-    //             str += '<span>';
-    //             str += obj_[i].num + '台';
-    //             str += '</span>';
-
-    //             str += '</div >';
-
-
-
-    //             str += '<div >';
-    //             str += '<span>';
-    //             str += obj_[i].apply;
-    //             str += '</span>';
-
-    //             str += '申请';
-    //             str += '</div >';
-
-    //             str += '<div>';
-    //             str += '报告数量 ：8';
-    //             str += '</div>';
-    //             str += '</li>';
-
-    //         }
-    //         var ul_1 = document.getElementById('list1');
-    //         ul_1.innerHTML = str
-    //     }
-    // }
-
-
-
-
-
-
-
-
-
-
 
 
 </script>
