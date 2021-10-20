@@ -1,0 +1,145 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+li {
+    list-style: none;
+    margin: 0px;
+}
+
+.clear {
+    clear: both;
+}
+
+article {
+    width: 1300px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    margin: 30px auto;
+}
+
+.index_a>div {
+    float: left;
+}
+
+.dzsy {
+    color: coral;
+    border-bottom: 5px solid coral;
+}
+
+.index_a>div:first-child {
+    margin-left: 565px;
+    margin-right: 40px;
+}
+.index_a {
+    width: 300px;
+    height: 50px;
+    
+    margin: 0 auto;
+}
+.index_a li {
+    float: left;
+    text-align: center;
+    width: 100px;
+    height: 40px;
+    margin-left: 40px;
+}
+
+.index_b {
+    /* margin-top: 20px; */
+}
+.index_b ul {
+    width: 550px;
+    height: 50px;
+    margin: 0 auto;
+    /* background-color: blue; */
+}
+.index_b ul li {
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    list-style: none;
+    float: left;
+    margin-left: 30px;
+    
+}
+.index_c {
+    width: 1000px;
+    height: 945px;
+    margin: 20px auto;
+    background-color: #F7F7F7;
+    overflow: hidden;
+}
+.index_c1{
+    width: 1000px;
+    height: 1300px;
+    margin: 0 auto;
+    background-color: #F7F7F7;
+}
+.index_d {
+    width: 1000px;
+    margin: 20px auto;
+}
+
+
+#list>li {
+
+
+    width: 220px;
+    height: 300px;
+    border: 1px solid rgb(167, 162, 162);
+    margin-left: 23px;
+    margin-top: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+    float: left;
+}
+
+#list img {
+    width: 220px;
+    height: 150px;
+}
+
+#list p {
+    font-size: 18px;
+    margin: 0 5px;
+    font-weight: bold;
+}
+
+#list>li>div:nth-child(3) {
+    text-align: center;
+    margin: 10px 0;
+}
+
+#list>li>div:nth-child(3)>span {
+    border: 1px solid #D1D1D1;
+    font-size: 12px;
+    margin: 0 5px;
+    padding: 2px 15px;
+    color: #D1D1D1;
+}
+
+#list>li>div:nth-child(4) {
+    text-align: center;
+}
+
+#list>li>div:nth-child(4)>span {
+    color: red;
+}
+
+#list>li>div:nth-child(5) {
+    text-align: center;
+    margin-top: 5px;
+    color: #D1D1D1;
+}
+.index_e{
+    width: 1300px;
+    margin: 25px auto;
+    color: coral;
+    text-align: center;
+}

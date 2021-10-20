@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/help1.css">
+    <link rel="stylesheet" href="../css/top&bottom.css">
+    <script src="./jquery-3.5.1.min.js"></script>
+    <script src="../js/jquery.min.js"></script>
+</head>
+
+<body>
+
+
+    <div class="box">
+        <nav>
+            <div class="nav_box">
+                <div class="nav_logo"></div>
+                <div class="nav_ul">
+                    <ul>
+                        <li><a class="nav_a_active" href="#">首页</a></li>
+                        <li><a href="#">酷玩</a></li>
+                        <li><a href="#">导购</a></li>
+                        <li><a href="#">试用</a></li>
+                        <li><a href="#">报告</a></li>
+                    </ul>
+                </div>
+                <div class="nav_regist">
+                    <div class="nav_search"></div>
+                    <button><a href="../use/regist.html">注册</a></button>
+                </div>
+            </div>
+        </nav>
+
+
+
+        <article>
+            <h1>免费试用</h1>
+            <div class="index_a">
+                <ul>
+                    <li class="dzsy"> <a href="./help1.html">大众试用</a> </li>
+                    <li> <a href="./help2.html">体验师专享</a> </li>
+                </ul>
+            </div>
+            <div class="index_b">
+                <ul>
+                    <li>全部</li>
+                    <li>申请中</li>
+                    <li>试用中</li>
+                    <li>已结束</li>
+                </ul>
+            </div>
+            <div class="index_c">
+
+                <ul id="list">
+                </ul>
+
+                <!-- <ul id="list_1">
+                </ul>
+
+
+                <ul id="list_2">
+                </ul>
+
+
+
+
+                <ul id="list_3">
+                </ul> -->
+            </div>
+
+
+
+
+
+
+        </article>
+
+        <div class="index_e" onclick="olkk()">
+            <img src="./图片/css/img/more.png" alt="" class="index_e1">
+            点击显示更多
+        </div>
+
+        <footer>
+            <div class="footer_box">
+                <div class="footer_left">
+                    <img src="../img/code.png" alt="">
+                    <img src="../img/logoImg.jpg" alt="">
+                    <p>全球酷玩试用导购平台</p>
+                    <p>酷·新奇·好玩·品质</p>
+                    <p>微信添加'Jguojguo'获取我们的服务</p>
+                </div>
+                <dl>
+                    <dt>免费试用</dt>
+                    <dd>试用流程</dd>
+                    <dd>如何提高成功率</dd>
+                </dl>
+                <dl>
+                    <dt>友情链接</dt>
+                    <dd>智东西</dd>
+                    <dd>WEIBUSI</dd>
+                    <dd>搜狐IT</dd>
+                    <dd>腾讯科技</dd>
+                    <dd>搜狐数码</dd>
+                    <dd>凤凰科技</dd>
+                    <dd>凤凰数码</dd>
+                    <dd>PConline</dd>
+                    <dd>泡泡网</dd>
+                    <dd>3W咖啡</dd>
+                    <dd>ZUK社区</dd>
+                    <dd>亿觅emie</dd>
+                    <dd>极客公园</dd>
+                    <dd>易迅易启玩</dd>
+                    <dd>果库</dd>
+                </dl>
+                <dl>
+                    <dt>购买攻略</dt>
+                    <dd>美亚海淘教程</dd>
+                    <dd>日亚海淘教程</dd>
+                    <dd>海淘转运攻略</dd>
+                    <dd>kickstarter 众筹购买攻略</dd>
+                    <dd>indiegogo 众筹购买攻略</dd>
+                </dl>
+                <dl>
+                    <dt>厂商合作</dt>
+                    <dd>关于极果</dd>
+                    <dd>联系我们</dd>
+                    <dd>商务合作：BD@jiguo.com</dd>
+                    <dd>CEO邮箱：CEO@jiguo.com</dd>
+                </dl>
+
+            </div>
+            <p>㉢2016 极果版权所有</p>
+        </footer>
+
+
+    </div>
+
+
+</body>
+
+</html>
+
+
+<script>
+    var ys = document.getElementsByClassName('haha')[0];
+    var ajax = new XMLHttpRequest() || new ActiveXObject('Microsoft.XMLHTTP');
+    ajax.open('get', 'http://192.168.1.29:3000/useing/public', 'true')
+    ajax.send()
+    ajax.onreadystatechange = function () {
+        if (ajax.readyState == 4) {
+            if (ajax.status == 200) {
+                var j_data = JSON.parse(ajax.responseText);
+                // console.log(j_data);
+                show(j_data)
+            } else {
+                console.log('请求失败')
+            }
+        }
+    }
+
+    function show(obj_) {
+        var ul_ = document.getElementById('list');
+        var str = '';
+        console.log(obj_);
+        for (var i = 0; i < obj_.length; i++) {
+            str += '<li>';
+
+            str += '<div>';
+            str += '<img src ="' + obj_[i].img + '">';
+            str += '</div >';
+
+            str += '<p>';
+            str += obj_[i].text;
+            str += '</p>';
+
+
+            str += '<div>';
+            str += '<span>';
+            str += obj_[i].totalnum;
+            str += '</span>';
+
+            str += '<span>';
+            str += obj_[i].num + '台';
+            str += '</span>';
+
+            str += '</div >';
+
+
+
+            str += '<div >';
+            str += '<span>';
+            str += obj_[i].apply;
+            str += '</span>';
+
+            str += '申请';
+            str += '</div >';
+
+            str += '<div>';
+            str += '报告数量 ：8';
+            str += '</div>';
+            str += '</li>';
+        }
+        ul_.innerHTML = str;
+
+    }
+    function olkk() {
+        var olkk_ = document.getElementsByClassName('index_c')[0];
+        var olkk_1 = document.getElementsByClassName('index_e1')[0];
+        var olkk_2 = document.getElementsByClassName('index_e')[0];
+
+        olkk_.setAttribute('class', 'index_c1');
+        console.log(olkk_1)
+        olkk_1.style.display = 'none'
+        olkk_2.innerHTML = '亲，已经到底了'
+    }
+
+
+
+
+
+
+
+    $(function () {
+        $('.index_a li a').click(function () {
+            $(this).parents('li').addClass('dzsy').siblings().removeClass('dzsy');
+        })
+
+    })
+
+
+
+    // function show_1() {
+    //     var ajax = new XMLHttpRequest() || new ActiveXObject('Microsoft.XMLHttp');
+    //     ajax.open('get', 'http://192.168.1.29:3000/guid/hot', true)
+    //     ajax.send()
+
+    //     ajax.onreadystatechange = function () {
+    //         if (ajax.readyState == 4) {
+    //             if (ajax.status == 200) {
+    //                 var data = JSON.parse(ajax.responseText)
+    //                 showData(data);
+    //             }
+    //         }
+    //     }
+
+
+
+
+    //     function showData(val) {
+    //         var str = '';
+    //         for (var i = 0; i < val.length; i++) {
+    //             // str += '<li>'
+    //             // str += '<img src="' + val[i].img + '"alt="" class="lyh-gu-img">'
+    //             // str += '<span>' + val[i].text + '</span>'
+    //             // str += '<div class="lyh-gu-dz"><img src="../img/zan.png" alt="">' + val[i].like + '<img src="../img/reply.png" alt="">' + val[i].words + '</div>'
+    //             // str += '</li>'
+
+
+    //             str += '<li>';
+
+    //             str += '<div>';
+    //             str += '<img src ="' + obj_[i].img + '">';
+    //             str += '</div >';
+
+    //             str += '<p>';
+    //             str += obj_[i].text;
+    //             str += '</p>';
+
+
+    //             str += '<div>';
+    //             str += '<span>';
+    //             str += obj_[i].totalnum;
+    //             str += '</span>';
+
+    //             str += '<span>';
+    //             str += obj_[i].num + '台';
+    //             str += '</span>';
+
+    //             str += '</div >';
+
+
+
+    //             str += '<div >';
+    //             str += '<span>';
+    //             str += obj_[i].apply;
+    //             str += '</span>';
+
+    //             str += '申请';
+    //             str += '</div >';
+
+    //             str += '<div>';
+    //             str += '报告数量 ：8';
+    //             str += '</div>';
+    //             str += '</li>';
+
+    //         }
+    //         var ul_1 = document.getElementById('list1');
+    //         ul_1.innerHTML = str
+    //     }
+    // }
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
